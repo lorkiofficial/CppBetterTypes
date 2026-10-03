@@ -2,7 +2,7 @@
     "name": "cppbettertypes",
     "displayName": "CppBetterTypes",
     "description": "Better names for C++ types. Fixed-width, binary layout, and low-level data types made simple.",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "publisher": "Lorki",
 
     "engines": {
@@ -35,5 +35,8 @@
                 ]
             }
         ]
+    },
+    "scripts": {
+        "build": "node build.js"
     }
 }

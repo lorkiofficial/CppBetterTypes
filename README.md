@@ -163,3 +163,28 @@ uint32
 The goal is not to replace the C++ standard library.
 
 The goal is to provide a small, consistent vocabulary for code where type size and binary representation matter.
+
+
+## Build
+
+The extension can be packaged into a VSIX file using `vsce`.
+
+First, install `vsce` globally:
+
+```bash
+npm install -g @vscode/vsce
+```
+
+Then run:
+
+```bash
+npm run build
+```
+
+The build script reads the version from `package.json` and creates:
+
+```text
+build/CppBetterTypes-<version>.vsix
+```
+
+The `build/` directory is intended for generated files and should not be committed to the repository.
