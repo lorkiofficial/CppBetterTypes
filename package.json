@@ -1,0 +1,39 @@
+{
+    "name": "cppbettertypes",
+    "displayName": "CppBetterTypes",
+    "description": "Better names for C++ types. Fixed-width, binary layout, and low-level data types made simple.",
+    "version": "0.1.0",
+    "publisher": "Lorki",
+
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+
+    "main": "./extension.js",
+    
+    "contributes": {
+        "commands": [
+            {
+                "command": "cppbettertypes.connect",
+                "title": "CppBetterTypes: Connect to Project"
+            },
+            {
+                "command": "cppbettertypes.disconnect",
+                "title": "CppBetterTypes: Disconnect from Project"
+            },
+            {
+                "command": "cppbettertypes.status",
+                "title": "CppBetterTypes: Show Status"
+            }
+        ],
+        "grammars": [
+            {
+                "scopeName": "source.cpp.cppbettertypes",
+                "path": "./syntaxes/cppbettertypes.tmLanguage.json",
+                "injectTo": [
+                    "source.cpp"
+                ]
+            }
+        ]
+    }
+}

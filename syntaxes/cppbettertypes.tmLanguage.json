@@ -1,0 +1,14 @@
+{
+    "scopeName": "source.cpp.cppbettertypes",
+    "injectionSelector": "L:source.cpp",
+    "patterns": [
+        {
+            "name": "storage.type.primitive.cpp",
+            "match": "\\b(int8|int16|int32|int64|uint8|uint16|uint32|uint64|intptr|uintptr|usize|wchar|boolean)\\b"
+        },
+        {
+            "name": "storage.type.primitive.cpp",
+            "match": "\\b(offset32|offset64|byte|pad|reserved|unknown)\\b"
+        }
+    ]
+}
